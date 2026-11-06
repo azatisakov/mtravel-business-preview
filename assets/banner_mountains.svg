@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+<defs>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#061F22"/>
+<stop offset="1" stop-color="#0F4D49"/>
+</linearGradient>
+</defs>
+<rect width="800" height="480" fill="url(#s)"/>
+<g fill="#FFFFFF">
+<circle cx="80" cy="60" r="1.4" fill-opacity="0.8"/>
+<circle cx="160" cy="110" r="1" fill-opacity="0.5"/>
+<circle cx="240" cy="40" r="1.2" fill-opacity="0.7"/>
+<circle cx="330" cy="90" r="0.9" fill-opacity="0.5"/>
+<circle cx="420" cy="50" r="1.3" fill-opacity="0.8"/>
+<circle cx="500" cy="120" r="1" fill-opacity="0.5"/>
+<circle cx="560" cy="30" r="1.1" fill-opacity="0.6"/>
+<circle cx="740" cy="70" r="1.2" fill-opacity="0.7"/>
+<circle cx="770" cy="150" r="0.9" fill-opacity="0.45"/>
+<circle cx="40" cy="150" r="0.9" fill-opacity="0.45"/>
+<circle cx="380" cy="150" r="0.8" fill-opacity="0.4"/>
+</g>
+<circle cx="640" cy="110" r="70" fill="#EEF1F5" fill-opacity="0.07"/>
+<circle cx="640" cy="110" r="34" fill="#EEF1F5"/>
+<path d="M0 300 L90 220 L150 262 L250 150 L340 236 L420 180 L520 260 L600 196 L700 250 L800 210 L800 480 L0 480 Z" fill="#1A3C61"/>
+<path d="M250 150 L224 179 L238 176 L250 188 L262 175 L278 179 Z" fill="#EEF1F5"/>
+<path d="M420 180 L398 203 L410 201 L421 211 L431 200 L443 203 Z" fill="#EEF1F5"/>
+<path d="M600 196 L580 217 L591 215 L601 224 L610 214 L622 217 Z" fill="#EEF1F5"/>
+<path d="M90 220 L72 236 L82 235 L91 243 L99 234 L108 236 Z" fill="#EEF1F5"/>
+<path d="M0 360 L120 280 L200 330 L300 260 L400 340 L500 290 L620 350 L720 300 L800 330 L800 480 L0 480 Z" fill="#0E4642"/>
+<path d="M300 260 L282 277 L293 276 L302 285 L311 275 L322 278 Z" fill="#DCE3EA"/>
+<path d="M500 290 L484 305 L494 304 L502 312 L510 303 L520 306 Z" fill="#DCE3EA"/>
+<path d="M120 280 L104 293 L113 292 L121 300 L128 291 L138 293 Z" fill="#DCE3EA"/>
+<path d="M0 420 C160 396 300 430 460 410 C600 394 700 420 800 404 L800 480 L0 480 Z" fill="#072E2C"/>
+<g fill="#041E1C">
+<path d="M60 430 L72 398 L84 430 Z"/>
+<path d="M80 432 L90 406 L100 432 Z"/>
+<path d="M600 418 L612 386 L624 418 Z"/>
+<path d="M622 420 L632 394 L642 420 Z"/>
+<path d="M700 424 L710 400 L720 424 Z"/>
+</g>
+</svg>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MTravel Business — контакты</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/png" href="../assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+body{margin:0;font-family:Manrope,system-ui,-apple-system,sans-serif;color:#1C2128;background:#fff;-webkit-font-smoothing:antialiased}
+a{color:#1766CC}a:hover{color:#0F4F9E}
+*{box-sizing:border-box}
+.wrap{max-width:1320px;margin:0 auto;padding:0 32px}
+.hdr{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:84px;flex-wrap:wrap}
+.nav{display:flex;gap:22px;flex-wrap:wrap}
+.nav a{color:#1C2128;text-decoration:none;font-weight:600;font-size:14px;white-space:nowrap}
+.nav a:hover,.nav a.cur{color:#1766CC}
+.burger{display:none !important}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 22px;border-radius:999px;font:inherit;font-weight:700;font-size:15px;cursor:pointer;text-decoration:none;border:1px solid transparent;white-space:nowrap}
+.btn-p{background:#1766CC;color:#fff}.btn-p:hover{background:#0F4F9E;color:#fff}
+.btn-g{background:transparent;color:#1C2128;border-color:#D5D9DE}.btn-g:hover{border-color:#1C2128;color:#1C2128}
+.btn-o{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}.btn-o:hover{border-color:#fff;color:#fff}
+.lang{display:flex;border:1px solid #D5D9DE;border-radius:999px;overflow:hidden}
+.lang button{font:inherit;font-weight:700;font-size:13px;height:44px;min-width:44px;border:0;background:#fff;color:#5F6670;cursor:pointer}
+.lang button.on{background:#1C2128;color:#fff}
+.g2,.g3,.g4{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.sec{padding:96px 0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#1766CC}
+.h2{font-size:40px;line-height:1.1;font-weight:800;letter-spacing:-.02em;margin:12px 0 0}
+.lead{font-size:18px;line-height:1.55;color:#5F6670;margin:16px 0 0;max-width:640px}
+.card{background:#fff;border:1px solid #E6E9ED;border-radius:20px;padding:28px}
+.ph{background:repeating-linear-gradient(135deg,#E9EDF1 0 10px,#F3F5F7 10px 20px);border-radius:16px;display:flex;align-items:center;justify-content:center;color:#5F6670;font-size:13px;font-weight:600;text-align:center;padding:16px;line-height:1.4}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:13px;font-weight:700;color:#1C2128}
+.field input,.field select,.field textarea{font:inherit;font-size:15px;height:48px;padding:0 14px;border:1px solid #D5D9DE;border-radius:12px;background:#fff;color:#1C2128;width:100%}
+.field textarea{height:110px;padding:12px 14px;resize:vertical}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px;background:#EFF5FF;color:#1766CC}
+.tag-dev{background:#FFF4D6;color:#7A4B00}
+.star{display:inline-flex;width:44px;height:44px;border-radius:12px;border:1px solid #D5D9DE;align-items:center;justify-content:center;background:#fff;cursor:pointer;color:#B8C0C8}
+.star.on{color:#FABF00;border-color:#FABF00}
+.dept{display:flex;flex-direction:column;gap:8px;padding:24px;border:1px solid #E6E9ED;border-radius:18px;background:#fff}
+.dept a{text-decoration:none;font-weight:700;color:#1C2128}
+.foot{background:#1E2226;color:#B8C0C8;padding:72px 0 32px;font-size:14px;line-height:1.6}
+.foot a{color:#fff;text-decoration:none;font-weight:500}.foot a:hover{color:#2990FF}
+.foot h4{color:#fff;font-size:14px;margin:0 0 14px;letter-spacing:.08em;text-transform:uppercase}
+.soc{display:inline-flex;width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.18);align-items:center;justify-content:center;color:#fff}
+.soc:hover{border-color:#2990FF;color:#2990FF}
+.chat{position:fixed;right:24px;bottom:24px;display:flex;align-items:center;gap:10px;height:56px;padding:0 20px 0 16px;border-radius:999px;background:#2F353B;color:#fff;font-weight:700;border:0;font:inherit;font-size:15px;cursor:pointer;box-shadow:0 12px 30px rgba(47,53,59,.3);z-index:5}
+.crumbs{font-size:13px;color:#5F6670;display:flex;gap:8px;flex-wrap:wrap}
+.crumbs a{color:#5F6670;text-decoration:none}
+@media (max-width:960px){.g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.h2{font-size:32px}.sec{padding:64px 0}.nav{display:none}.burger{display:inline-flex !important}.hide-m{display:none}}
+@media (max-width:640px){.g2,.g3,.g4{grid-template-columns:1fr}.wrap{padding:0 16px}.h2{font-size:28px}.hero-h1{font-size:34px !important}.sec{padding:56px 0}.chat{right:16px;bottom:16px}}
+</style>
+<style>.x-if{display:contents}.x-hide{display:none!important}.x-preview{position:relative;z-index:30;background:#FFF4D6;color:#7A4B00;font:600 13px/1.45 Manrope,system-ui,-apple-system,sans-serif;text-align:center;padding:8px 16px}</style>
+</head>
+<body>
+<div class="x-preview" role="note">Черновик сайта для внутреннего согласования. Данные в [квадратных скобках] — заполнить.</div>
+
+
+
+<div style="display:flex;flex-direction:column;min-height:100%;background:#fff">
+
+<div style="background:#2F353B;color:#D9E0E7;font-size:13px">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;min-height:36px;gap:16px;flex-wrap:wrap">
+    <span>Бишкек, Панфилова 164/1 · на связи 24/7</span>
+    <span style="display:flex;gap:18px;flex-wrap:wrap"><a href="tel:+996312906906" style="color:#fff;text-decoration:none;font-weight:600">+996 312 906 906</a><a href="https://wa.me/996559906906" style="color:#fff;text-decoration:none;font-weight:600">WhatsApp +996 559 906 906</a></span>
+  </div>
+</div>
+
+<header style="border-bottom:1px solid #E6E9ED;background:#fff">
+  <div class="wrap hdr">
+    <a href="index.html" aria-label="MTravel Business — на главную" style="display:inline-flex;align-items:center"><img src="../assets/logo_dark.png" alt="MTravel Business" style="height:56px;width:auto"></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="about.html">About</a>
+      <a href="index.html#akcii">Offers & news</a>
+      <a href="blog.html">Insights</a>
+      <a href="careers.html">Careers</a>
+      <a href="contacts.html" class="cur">Contacts</a>
+      <a href="contacts.html#otzyv" style="color:#1766CC;font-weight:700">Feedback</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+      <div class="lang" role="group" aria-label="Язык сайта">
+        <button type="button" class="" data-on="lang" data-href="../contacts.html">RU</button>
+        <button type="button" class="" data-on="lang" data-href="../ky/contacts.html">KG</button>
+        <button type="button" class="on" data-on="lang" data-href="contacts.html">EN</button>
+      </div>
+      <button type="button" class="btn btn-g hide-m" title="Личный кабинет откроется позже" style="height:44px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>Sign in <span class="tag tag-dev" style="padding:2px 8px">soon</span></button>
+      <a href="#zayavka" class="btn btn-p hide-m" style="height:44px">Request a call</a>
+      <button type="button" class="burger btn btn-g" aria-label="Открыть меню" style="width:44px;height:44px;padding:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- Заголовок -->
+<section style="background:#F5F6F7">
+  <div class="wrap" style="padding-top:64px;padding-bottom:64px">
+    <div class="crumbs"><a href="index.html">Главная</a><span>/</span><span>Контакты</span></div>
+    <span class="eyebrow" style="display:block;margin-top:28px">Контакты</span>
+    <h1 class="hero-h1" style="margin:12px 0 0;font-size:52px;line-height:1.05;font-weight:800;letter-spacing:-.025em">Contacts</h1>
+    <p style="margin:16px 0 0;font-size:19px;line-height:1.55;color:#5F6670;max-width:640px">Office in Bishkek, branch in Osh, ticket desks at the airports. Department phones, enquiry and feedback forms.</p>
+  </div>
+</section>
+
+<!-- Офисы и карта -->
+<section class="sec">
+  <div class="wrap">
+    <div class="g2" style="gap:40px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="card" style="display:flex;flex-direction:column;gap:10px"><span class="eyebrow">Головной офис · Бишкек</span><strong style="font-size:22px">ул. Панфилова, 164/1</strong><span style="font-size:15px;color:#5F6670;line-height:1.6">График работы 24/7 — по телефону, в WhatsApp и в чате<br>Прием в офисе: [часы приема] · корпоративный отдел, VIP-сервис, туры, партнеры</span><div style="display:flex;gap:16px;flex-wrap:wrap;font-weight:700"><a href="tel:+996312906906" style="text-decoration:none">+996 312 906 906</a><a href="tel:+996775906906" style="text-decoration:none">+996 775 906 906</a><a href="https://wa.me/996559906906" style="text-decoration:none">WhatsApp</a></div></div>
+        <div class="g2" style="gap:16px">
+          <div class="card" style="display:flex;flex-direction:column;gap:8px;padding:22px"><span class="eyebrow">Отделение · Ош</span><strong style="font-size:17px">[адрес отделения в Оше]</strong><span style="font-size:14px;color:#5F6670">Партнеры юга, авиабилеты<br>[телефон отделения]</span></div>
+          <div class="card" style="display:flex;flex-direction:column;gap:8px;padding:22px"><span class="eyebrow">Аэропорты</span><strong style="font-size:17px">Манас · Ош</strong><span style="font-size:14px;color:#5F6670">Кассы и помощь пассажирам в зоне вылета<br>[телефоны касс]</span></div>
+        </div>
+      </div>
+      <div class="ph" style="min-height:420px;border-radius:28px">Карта: Бишкек, Панфилова 164/1<br>встроенная карта 2GIS или Google Maps</div>
+    </div>
+  </div>
+</section>
+
+<!-- Отделы -->
+<section class="sec" style="background:#F5F6F7;padding-top:72px;padding-bottom:72px">
+  <div class="wrap">
+    <span class="eyebrow">Кому писать</span>
+    <h2 class="h2">Прямые контакты отделов</h2>
+    <div class="g4" style="margin-top:40px;gap:16px">
+      <div class="dept"><span class="eyebrow">Компаниям</span><a href="mailto:corporate@bilet.kg">corporate@bilet.kg</a><a href="tel:+996312906906">+996 312 906 906</a><span style="font-size:13px;color:#5F6670">Договоры, счета, поездки сотрудников</span></div>
+      <div class="dept"><span class="eyebrow">VIP-линия</span><a href="tel:+996312906906">[номер VIP-линии]</a><a href="mailto:vip@bilet.kg">[vip@bilet.kg]</a><span style="font-size:13px;color:#5F6670">Круглосуточно, только для VIP-клиентов</span></div>
+      <div class="dept"><span class="eyebrow">Партнерам · Help-Desk</span><a href="tel:+996551910460">+996 551 910 460</a><a href="mailto:partners@bilet.kg">[partners@bilet.kg]</a><span style="font-size:13px;color:#5F6670">Подключение, договор, выписка — 24/7</span></div>
+      <div class="dept"><span class="eyebrow">Туры, отели, визы</span><a href="tel:+996775906906">+996 775 906 906</a><a href="mailto:tours@bilet.kg">[tours@bilet.kg]</a><span style="font-size:13px;color:#5F6670">Турпакеты, отели, визовая поддержка</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Две формы -->
+<section class="sec" id="zayavka">
+  <div class="wrap">
+    <div class="g2" style="gap:40px;align-items:start">
+      <!-- Обращение нового клиента -->
+      <div class="card" style="padding:32px;display:flex;flex-direction:column;gap:20px">
+        <div><span class="eyebrow">Новым клиентам</span><h2 class="h2" style="font-size:28px">Оставить обращение</h2><p style="margin:10px 0 0;font-size:15px;color:#5F6670;line-height:1.5">Направим нужному менеджеру и ответим в течение рабочего часа.</p></div>
+        <div class="x-if" data-if="notSent">
+        <form data-submit="send" style="display:flex;flex-direction:column;gap:16px">
+          <div class="field"><label for="k-who">Кто вы</label><select id="k-who"><option>Корпоративный клиент (компания)</option><option>VIP-клиент (частное лицо)</option><option>Партнер (турагентство)</option><option>Частное лицо — туры, визы, отели</option><option>Другое</option></select></div>
+          <div class="g2" style="gap:16px">
+            <div class="field"><label for="k-name">Имя</label><input id="k-name" type="text"></div>
+            <div class="field"><label for="k-phone">Телефон</label><input id="k-phone" type="tel" placeholder="+996"></div>
+          </div>
+          <div class="field"><label for="k-mail">Почта</label><input id="k-mail" type="email"></div>
+          <div class="field"><label for="k-msg">Сообщение</label><textarea id="k-msg" placeholder="Что нужно и когда"></textarea></div>
+          <div class="field"><label for="k-ch">Как удобнее ответить</label><select id="k-ch"><option>Звонок</option><option>WhatsApp</option><option>Telegram</option><option>Почта</option></select></div>
+          <label style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#5F6670;line-height:1.45"><input type="checkbox" style="margin-top:3px;width:18px;height:18px">Согласен на обработку персональных данных ОсОО «Билет Стандарт»</label>
+          <button type="submit" class="btn btn-p" style="height:56px;font-size:16px">Отправить</button>
+          <span class="tag tag-dev" style="align-self:flex-start">Заготовка: форма подключится к системе заявок</span>
+        </form>
+        </div>
+        <div class="x-if x-hide" data-if="sent">
+        <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;min-height:280px;justify-content:center">
+          <span style="display:inline-flex;width:56px;height:56px;border-radius:50%;background:#EFF5FF;align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1766CC" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>
+          <strong style="font-size:22px">Обращение отправлено</strong>
+          <span style="font-size:15px;color:#5F6670;line-height:1.5">Ответим в течение рабочего часа выбранным способом.</span>
+          <button type="button" class="btn btn-g" data-on="reset">Назад</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- Отзыв -->
+      <div class="card" id="otzyv" style="padding:32px;display:flex;flex-direction:column;gap:20px;background:#2F353B;color:#fff;border-color:#2F353B">
+        <div><span class="eyebrow" style="color:#2990FF">Обратная связь</span><h2 class="h2" style="font-size:28px;color:#fff">Отзыв, жалоба или предложение</h2><p style="margin:10px 0 0;font-size:15px;color:#CDD5DE;line-height:1.5">Читает генеральный директор. Публикуем на сайте только с вашего согласия.</p></div>
+        <div class="x-if" data-if="revNotSent">
+        <form data-submit="sendRev" style="display:flex;flex-direction:column;gap:16px">
+          <div class="field"><span style="font-size:13px;font-weight:700;color:#fff">Оценка</span><div style="display:flex;gap:8px;margin-top:4px" role="group" aria-label="Оценка от 1 до 5">
+            <button type="button" class="star on" data-on="set1" aria-label="1 из 5"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6L18.4 22 12 18.2 5.6 22l1.7-7.8L2 9.6 9 9z"/></svg></button>
+            <button type="button" class="star on" data-on="set2" aria-label="2 из 5"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6L18.4 22 12 18.2 5.6 22l1.7-7.8L2 9.6 9 9z"/></svg></button>
+            <button type="button" class="star on" data-on="set3" aria-label="3 из 5"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6L18.4 22 12 18.2 5.6 22l1.7-7.8L2 9.6 9 9z"/></svg></button>
+            <button type="button" class="star on" data-on="set4" aria-label="4 из 5"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6L18.4 22 12 18.2 5.6 22l1.7-7.8L2 9.6 9 9z"/></svg></button>
+            <button type="button" class="star on" data-on="set5" aria-label="5 из 5"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6L18.4 22 12 18.2 5.6 22l1.7-7.8L2 9.6 9 9z"/></svg></button>
+          </div></div>
+          <div class="g2" style="gap:16px">
+            <div class="field"><label for="r-name" style="color:#fff">Имя</label><input id="r-name" type="text"></div>
+            <div class="field"><label for="r-company" style="color:#fff">Компания или агентство</label><input id="r-company" type="text" placeholder="Необязательно"></div>
+          </div>
+          <div class="field"><label for="r-who" style="color:#fff">Вы наш</label><select id="r-who"><option>Корпоративный клиент</option><option>VIP-клиент</option><option>Партнер</option><option>Частный клиент</option></select></div>
+          <div class="field"><label for="r-msg" style="color:#fff">Отзыв</label><textarea id="r-msg" placeholder="Что понравилось, что исправить"></textarea></div>
+          <div class="field"><label for="r-contact" style="color:#fff">Контакт для ответа</label><input id="r-contact" type="text" placeholder="Телефон или почта"></div>
+          <label style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#CDD5DE;line-height:1.45"><input type="checkbox" style="margin-top:3px;width:18px;height:18px">Разрешаю опубликовать отзыв на сайте с моим именем</label>
+          <button type="submit" class="btn" style="height:56px;font-size:16px;background:#2990FF;color:#14181C">Отправить отзыв</button>
+          <span class="tag tag-dev" style="align-self:flex-start">Заготовка: форма подключится к системе заявок</span>
+        </form>
+        </div>
+        <div class="x-if x-hide" data-if="revSent">
+        <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;min-height:280px;justify-content:center">
+          <span style="display:inline-flex;width:56px;height:56px;border-radius:50%;background:rgba(41,144,255,.2);align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2990FF" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span>
+          <strong style="font-size:22px">Спасибо за отзыв</strong>
+          <span style="font-size:15px;color:#CDD5DE;line-height:1.5">Если вы оставили контакт, ответим в течение двух рабочих дней.</span>
+          <button type="button" class="btn btn-o" data-on="resetRev">Назад</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Реквизиты и документы -->
+<section class="sec" style="background:#F5F6F7;padding-top:72px;padding-bottom:72px">
+  <div class="wrap">
+    <div class="g2" style="gap:40px;align-items:start">
+      <div class="card" style="display:flex;flex-direction:column;gap:10px"><span class="eyebrow">Реквизиты</span><strong style="font-size:20px">ОсОО «Билет Стандарт»</strong><span style="font-size:15px;line-height:1.7;color:#3B434C">ИНН [номер] · ОКПО [номер]<br>Юридический адрес: [адрес по уставу]<br>Фактический адрес: Бишкек, ул. Панфилова, 164/1<br>Банк: [название], р/с [номер], БИК [номер]<br>Генеральный директор: [Имя Фамилия]</span></div>
+      <div class="card" style="display:flex;flex-direction:column;gap:12px"><span class="eyebrow">Документы</span><a href="contacts.html" style="font-weight:700;text-decoration:none;display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #E6E9ED">Политика конфиденциальности <span style="color:#5F6670;font-weight:500">PDF</span></a><a href="contacts.html" style="font-weight:700;text-decoration:none;display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #E6E9ED">Публичная оферта для частных лиц <span style="color:#5F6670;font-weight:500">PDF</span></a><a href="partners.html" style="font-weight:700;text-decoration:none;display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #E6E9ED">Договор и правила работы для партнеров <span style="color:#5F6670;font-weight:500">PDF</span></a><a href="contacts.html" style="font-weight:700;text-decoration:none;display:flex;justify-content:space-between;gap:12px;padding:12px 0">Свидетельства, аккредитация IATA, представительства <span style="color:#5F6670;font-weight:500">PDF</span></a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="g4" style="gap:40px">
+      <div style="display:flex;flex-direction:column;gap:18px">
+        <img src="../assets/logo_on_dark.png" alt="MTravel Business" style="height:30px;width:auto;align-self:flex-start">
+        <span>Деловые поездки и путешествия: авиабилеты, отели, трансферы, визы, VIP-залы, страхование, туры.</span>
+        <div style="display:flex;gap:10px">
+          <a class="soc" href="https://www.instagram.com/biletkg/" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a class="soc" href="https://www.tiktok.com/@biletkg" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4v10a4 4 0 1 1-4-4"/><path d="M14 4c0 3 2 5 5 5"/></svg></a>
+          <a class="soc" href="https://t.me/" aria-label="Telegram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 4L3 11l6 2 2 6 3-4 5 3z"/><path d="M9 13l10-8"/></svg></a>
+          <a class="soc" href="https://wa.me/996559906906" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20l1.5-4A8 8 0 1 1 8 18.5z"/><path d="M9 9c0 4 2 6 6 6l1-2-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2z"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Клиентам</h4><div style="display:flex;flex-direction:column;gap:10px"><a href="corporate.html">Корпоративным клиентам</a><a href="vip.html">VIP-клиентам</a><a href="partners.html">Партнерам</a><a href="index.html#akcii">Акции и новости</a></div></div>
+      <div><h4>Компания</h4><div style="display:flex;flex-direction:column;gap:10px"><a href="about.html">О нас</a><a href="careers.html">Вакансии</a><a href="blog.html">Полезное и интересное</a><a href="contacts.html#otzyv">Отзывы</a><a href="contacts.html">Контакты</a></div></div>
+      <div><h4>Контакты</h4><div style="display:flex;flex-direction:column;gap:10px"><a href="tel:+996312906906">+996 312 906 906</a><a href="tel:+996775906906">+996 775 906 906</a><a href="https://wa.me/996559906906">WhatsApp +996 559 906 906</a><a href="mailto:corporate@bilet.kg">corporate@bilet.kg</a><span>Бишкек, ул. Панфилова, 164/1</span></div></div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.12);margin-top:48px;padding-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:#8A9099">
+      <span>© 2026 ОсОО «Билет Стандарт» · MTravel Business · компания группы MTravel</span>
+      <span style="display:flex;gap:20px;flex-wrap:wrap"><a href="contacts.html" style="color:#8A9099">Политика конфиденциальности</a><a href="contacts.html" style="color:#8A9099">Публичная оферта</a></span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="chat" aria-label="Открыть чат"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2990FF" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg>Чат с нами <span class="tag tag-dev" style="padding:2px 8px">soon</span></button>
+
+</div>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>
